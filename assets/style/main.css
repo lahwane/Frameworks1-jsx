@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+    --clr1: rgb(96, 107, 91);
+    --clr2: rgb(139, 115, 127);
+    --clr3: rgb(172, 120, 128);
+    --clr4: rgb(186, 130, 129);
+
+    --clr1bg: rgb(153, 166, 149);
+    --clr2bg: rgb(233, 206, 221);
+
+    --gray: rgb(44, 44, 44);
+}
+
+body {
+    margin: 0;
+    color: var(--gray);
+    background-color: rgb(255, 244, 240);
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.app-header {
+    background-color: var(--clr1);
+    color: var(--clr1bg);
+    padding: 1em;
+}
+
+@media (max-width: 720px) {
+    .app-header {
+        color: var(--clr2bg);
+    }
+}
+
+.dark {
+    background-color: rgb(175, 172, 172);
+}
+
+button {
+    cursor: pointer;
+}
+
+.simple-counter {
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+}
+
+.simple-counter button {
+    margin: 5px;
+    border: 0;
+    background-color: brown;
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.user-msg {
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.user-msg.success {
+    background-color: var(--clr1);
+}
+
+.user-msg.error {
+    background-color: var(--clr2);
+}
+
+.user-msg button {
+    float: right;
+    margin: 1em;
+}
+
+.user-preview {
+    background-color: var(--clr2);
+    color: whitesmoke;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+}
+.user-preview button {
+    margin: 5px;
+}
+.simple-timer {
+    background-color: var(--clr3);
+    padding: 10px;
+    margin: 10px;
+}
+
+.car-app {
+    background-color: var(--clr4);
+    padding: 10px;
+    margin: 10px;
+}
+
+.car-app ul {
+    text-align: start;
+}
